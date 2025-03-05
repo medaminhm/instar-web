@@ -75,7 +75,7 @@ function Hero() {
         {/* Right Section: Image */}
         <div className="lg:w-1/2 mt-8 lg:mt-0">
           <motion.img
-            src="src/assets/images/hero_image.png"  // Replace with your image path
+            src="dist/assets/images/hero_image.png"  // Replace with your image path
             alt="Hero Image"
             className="w-full h-auto object-cover rounded-lg"
             initial={{ opacity: 0 }}
