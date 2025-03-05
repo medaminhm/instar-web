@@ -4,17 +4,17 @@ const cofounders = [
   {
     name: "Mariem DHAOUIADI",
     role: "CEO",
-    image: "src/assets/images/Mariem.jpg", // Replace with actual image path
+    image: "/assets/images/Mariem.jpg", // Replace with actual image path
   },
   {
     name: "Abd El Razzak DHAOUIADI",
     role: "COO",
-    image: "src/assets/images/AbedRazek.png", // Replace with actual image path
+    image: "/assets/images/AbedRazek.png", // Replace with actual image path
   },
   {
     name: "Yassine AJROUD",
     role: "CTO",
-    image: "src/assets/images/Yassine.png", // Replace with actual image path
+    image: "/assets/images/Yassine.png", // Replace with actual image path
   },
 ];
 

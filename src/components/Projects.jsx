@@ -5,7 +5,7 @@ const projects = [
     name: "Indar Deco",
     description:
       "Indar Deco est une plateforme de v-commerce spécialisée dans les produits de mobilier, intégrant des technologies de réalité augmentée (AR) et de réalité virtuelle (VR) pour offrir une expérience d'achat immersive et innovante. Grâce à ces technologies, les utilisateurs peuvent visualiser les produits dans leur environnement via AR et explorer un showroom virtuel en VR, le tout en ligne.",
-    image: "src/assets/images/1726764094685-portrait.png", // Remplacer par le chemin réel de l'image
+    image: "/assets/images/1726764094685-portrait.png", // Remplacer par le chemin réel de l'image
     link: "#", // Mettre le lien réel du projet si nécessaire
   },
 ];

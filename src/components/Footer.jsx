@@ -84,7 +84,7 @@ export default function Footer() {
               <a href="#" className="text-white hover:text-gray-300">
                 {/* Partner 1 */}
                 <img
-                  src="src/assets/images/partners/logo-apii.jpg"
+                  src="/assets/images/partners/logo-apii.jpg"
                   alt="APII Manouba"
                   className="h-12"
                 />
