@@ -1,3 +1,4 @@
+[![Azure Static Web Apps CI/CD](https://github.com/medaminhm/instar-web/actions/workflows/azure-static-web-apps-witty-river-069648f10.yml/badge.svg)](https://github.com/medaminhm/instar-web/actions/workflows/azure-static-web-apps-witty-river-069648f10.yml)
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
