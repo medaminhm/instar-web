@@ -92,7 +92,7 @@ export default function Footer() {
               <a href="#" className="text-white hover:text-gray-300">
                 {/* Partner 2 */}
                 <img
-                  src="src/assets/images/partners/ticdce.jpg"
+                  src="/assets/images/partners/ticdce.jpg"
                   alt="TICDCE"
                   className="h-12"
                 />
