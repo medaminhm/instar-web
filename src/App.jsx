@@ -1,27 +1,53 @@
-import React from 'react'
-import {NavLink} from 'react-router-dom'
-import NavBar from './components/NavBar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Services from './components/Services'
-import Projects from './components/Projects'
-import Footer from './components/Footer'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Services from './components/Services';
+import Projects from './components/Projects';
+import Footer from './components/Footer';
+import IndarDecoDetails from './components/IndarDecoDetails'; // Import the new page
 
+function AppContent() {
+  const location = useLocation(); // Get current route
+
+  return (
+    <div className="bg-black">
+      {/* Show NavBar only if NOT on Indar Deco Details Page */}
+      {location.pathname !== "/indar-deco-details" && <NavBar />}
+
+      <Routes>
+        {/* Home Page */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <About />
+              <Services />
+              <Projects />
+              <Footer />
+            </>
+          }
+        />
+        
+        {/* Indar Deco Details Page */}
+        <Route path="/indar-deco-details" element={<IndarDecoDetails />} />
+      </Routes>
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div className='bg-black'>
-    <NavBar/>
-    <Hero/>
-    <About/>
-    <Services/>
-    <Projects/>
-    <Footer/>
-    </div>
-  )
+    <Router>
+      <AppContent />
+    </Router>
+  );
 }
 
-export default App
+export default App;
+
 
 {/* <nav className='relative container mx-auto p-6 bg-red-500'>
       <div className="flex items-center justify-between">
