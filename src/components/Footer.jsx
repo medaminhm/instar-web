@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#284F75] text-white py-12">
+    <footer id="contact" className="bg-[#284F75] text-white py-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact Info */}
@@ -41,7 +41,7 @@ export default function Footer() {
               placeholder="Votre Message"
               className="p-2 rounded text-black"
             ></textarea>
-            <button className="bg-white text-[#284F75] py-2 px-4 rounded hover:bg-gray-200">
+            <button disabled className="bg-white text-[#284F75] py-2 px-4 rounded hover:bg-gray-200">
               Envoyer
             </button>
           </motion.form>
@@ -57,16 +57,13 @@ export default function Footer() {
           >
             <h3 className="text-xl font-bold">Suivez-nous</h3>
             <div className="flex space-x-4 ml-4">
-              <a href="#" className="text-white hover:text-gray-300 text-2xl">
+              <a href="https://www.facebook.com/profile.php?id=100094304917318"  target="_blank" className="text-white hover:text-gray-300 text-2xl">
                 <FaFacebook />
               </a>
-              <a href="#" className="text-white hover:text-gray-300 text-2xl">
-                <FaTwitter />
-              </a>
-              <a href="#" className="text-white hover:text-gray-300 text-2xl">
+              <a href="https://www.linkedin.com/company/instartech/posts/?feedView=all" target="_blank" className="text-white hover:text-gray-300 text-2xl">
                 <FaLinkedin />
               </a>
-              <a href="#" className="text-white hover:text-gray-300 text-2xl">
+              <a href="https://www.instagram.com/instar_technology/" target="_blank" className="text-white hover:text-gray-300 text-2xl">
                 <FaInstagram />
               </a>
             </div>
@@ -81,23 +78,31 @@ export default function Footer() {
           >
             <h3 className="text-xl font-bold">Nos partenaires</h3>
             <div className="flex space-x-6">
-              <a href="#" className="text-white hover:text-gray-300">
+            
                 {/* Partner 1 */}
                 <img
-                  src="/assets/images/partners/logo-apii.jpg"
+                  src="src/assets/images/partners/logo-apii.jpg"
                   alt="APII Manouba"
-                  className="h-12"
+                  className="h-20"
                 />
-              </a>
-              <a href="#" className="text-white hover:text-gray-300">
+             
+              
                 {/* Partner 2 */}
                 <img
-                  src="/assets/images/partners/ticdce.jpg"
+                  src="src/assets/images/partners/ticdce.jpg"
                   alt="TICDCE"
-                  className="h-12"
+                  className="h-20"
                 />
-              </a>
+              
               {/* Add more partners as needed */}
+             
+                {/* Partner 2 */}
+                <img
+                  src="src/assets/images/partners/aws.png"
+                  alt="AWS"
+                  className="h-20"
+                />
+           
             </div>
           </motion.div>
         </div>
