@@ -4,24 +4,24 @@ const services = [
   {
     title: "Réalité Augmentée (AR)",
     description: "Nous créons des expériences immersives avec la réalité augmentée pour améliorer l'interaction des utilisateurs avec vos produits.",
-    icon: "/assets/ar-svgrepo-com.svg", // Replace with an actual image or icon path
+    icon: "src/assets/ar-svgrepo-com.svg", // Replace with an actual image or icon path
   },
   {
     title: "Réalité Virtuelle (VR)",
     description: "Offrez à vos clients une immersion totale avec nos solutions de réalité virtuelle adaptées à vos besoins.",
-    icon: "/assets/vr-svgrepo-com.svg", // Replace with an actual image or icon path
+    icon: "src/assets/vr-svgrepo-com.svg", // Replace with an actual image or icon path
   },
   {
     title: "Développement Mobile & Web",
     description: "Nous développons des applications mobiles et web performantes pour répondre aux besoins de votre entreprise.",
-    icon: "/assets/code-tech-dev-svgrepo-com.svg", // Replace with an actual image or icon path
+    icon: "src/assets/code-tech-dev-svgrepo-com.svg", // Replace with an actual image or icon path
   },
 ];
 
 export default function Services() {
   return (
-    <section className="bg-black py-16 px-6 md:px-12 lg:px-24 text-white">
-      <div className="max-w-4xl mx-auto text-center">
+    <section id="services" className="bg-black py-16 px-6 md:px-12 lg:px-24 text-white">
+      <div  className="max-w-4xl mx-auto text-center">
         <motion.h2
           className="text-4xl font-bold mb-8 text-primaryBlue font-[orbitron]"
           initial={{ opacity: 0, y: 50 }}
