@@ -81,7 +81,7 @@ export default function Footer() {
             
                 {/* Partner 1 */}
                 <img
-                  src="src/assets/images/partners/logo-apii.jpg"
+                  src="assets/images/partners/logo-apii.jpg"
                   alt="APII Manouba"
                   className="h-20"
                 />
@@ -89,7 +89,7 @@ export default function Footer() {
               
                 {/* Partner 2 */}
                 <img
-                  src="src/assets/images/partners/ticdce.jpg"
+                  src="assets/images/partners/ticdce.jpg"
                   alt="TICDCE"
                   className="h-20"
                 />
@@ -98,7 +98,7 @@ export default function Footer() {
              
                 {/* Partner 2 */}
                 <img
-                  src="src/assets/images/partners/aws.png"
+                  src="assets/images/partners/aws.png"
                   alt="AWS"
                   className="h-20"
                 />
