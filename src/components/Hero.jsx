@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 
 function Hero() {
   return (
-    <section className="bg-black py-5 mb-4 lg:py-20 w-full">
-      <div className="max-w-full mx-auto px-8 p-6 lg:px-28 flex flex-col lg:flex-row items-center">
+    <section id="accueil"  className="bg-black py-5 mb-4 lg:py-20 w-full">
+      <div  className="my-6 max-w-full mx-auto px-8 p-6 lg:px-28 flex flex-col lg:flex-row items-center ">
         {/* Left Section: Text */}
         <div className="text-left lg:w-1/2">
         <motion.h1
@@ -45,7 +45,7 @@ function Hero() {
             transition={{ duration: 1, delay: 1.5 }}
           >
             <motion.a
-              href="#"
+              href="#projets"
               className="bg-gradient-to-r from-blue-500 to-primaryBlue py-5 px-3 text-white rounded-md baseline hover:to-hoverPrimaryBlue hover:from-secondaryBlue text-center transition-all duration-200 ease-in-out transform hover:scale-105"
               style={{
                 backgroundSize: '200% 200%',
@@ -61,7 +61,7 @@ function Hero() {
             </motion.a>
 
             <motion.a
-              href="#"
+              href="#contact"
               className="mx-5 py-5 px-3 text-white baseline hover:text-grey text-center"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -75,7 +75,7 @@ function Hero() {
         {/* Right Section: Image */}
         <div className="lg:w-1/2 mt-8 lg:mt-0">
           <motion.img
-            src="/assets/images/hero_image.png"  // Replace with your image path
+            src="src/assets/images/hero_image.png"  // Replace with your image path
             alt="Hero Image"
             className="w-full h-auto object-cover rounded-lg"
             initial={{ opacity: 0 }}
