@@ -9,7 +9,7 @@ function NavBar() {
         <div>
           <a href="/" >
           <img
-            src="src/assets/images/logooooooblanc.png"
+            src="assets/images/logooooooblanc.png"
             className="w-32 md:w-40"
             alt="Instar Logo"
           /></a>
