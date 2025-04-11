@@ -4,23 +4,23 @@ const cofounders = [
   {
     name: "Mariem DHAOUIADI",
     role: "CEO",
-    image: "/assets/images/Mariem.jpg", // Replace with actual image path
+    image: "src/assets/images/Mariem.jpg", // Replace with actual image path
   },
   {
     name: "Abd El Razzak DHAOUIADI",
     role: "COO",
-    image: "/assets/images/AbedRazek.png", // Replace with actual image path
+    image: "src/assets/images/AbedRazek1.jpg", // Replace with actual image path
   },
   {
     name: "Yassine AJROUD",
     role: "CTO",
-    image: "/assets/images/Yassine.png", // Replace with actual image path
+    image: "src/assets/images/Yassine1.jpg", // Replace with actual image path
   },
 ];
 
 export default function AboutUs() {
   return (
-    <section className="bg-gray-100 py-16 px-6 md:px-12 lg:px-24">
+    <section id="à-propos-de-nous" className="bg-gray-100 py-16 px-6 md:px-12 lg:px-24">
       <div className="max-w-4xl mx-auto text-center">
         {/* Title with Animation */}
         <motion.h2
