@@ -20,16 +20,14 @@ jobs:
           submodules: true
           lfs: false
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'  # ou autre version compatible
-
       - name: Install dependencies
         run: npm install
 
-      - name: Build Vite app
+      - name: Build project
         run: npm run build
+
+      - name: Copy staticwebapp.config.json to dist
+        run: cp staticwebapp.config.json dist/
 
       - name: Build And Deploy
         id: builddeploy
@@ -38,9 +36,9 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WITTY_RIVER_069648F10 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "/"       # chemin vers ton projet
-          api_location: ""        # pas d'API dans ton cas
-          output_location: "dist" # dossier de sortie de Vite
+          app_location: "/" 
+          api_location: ""
+          output_location: "dist"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
